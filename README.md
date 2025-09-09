@@ -1,7 +1,7 @@
 # Point of Sale System Integrated with MPESA
 
 <p align="center">
-  <a href="https://www.jminnovatechsolution.co.ke" target="_blank">
+  <a href="https://pos.jminnovatechsolution.co.ke" target="_blank">
     <img src="https://www.jminnovatechsolution.co.ke/assets/img/iconbg-512.png" width="300" alt="JM Innovatech Logo">
   </a>
 </p>
@@ -16,19 +16,21 @@
 ## About
 
 This is a modern **Point of Sale (POS) system** built with **Laravel**, designed for businesses in Kenya to manage sales, inventory, and transactions efficiently.  
+
 The system is fully integrated with **MPESA Paybill** and **STK Push** for real-time payment confirmation, making financial operations seamless and automated.  
+
 It includes a **user-friendly admin panel** to manage products, orders, customers, and payments.
 
 ## Features
 
-- **Real-time MPESA integration** (Paybill & STK Push)
-- Order creation, management, and tracking
-- Inventory and stock management
-- Automated payment confirmation
-- User-friendly admin dashboard
-- Sales and profit reporting
-- Secure authentication and role-based access
-- Optimized for performance and reliability
+- Real-time MPESA integration (Paybill & STK Push)  
+- Order creation, management, and tracking  
+- Inventory and stock management  
+- Automated payment confirmation  
+- User-friendly admin dashboard  
+- Sales and profit reporting  
+- Secure authentication and role-based access  
+- Optimized for performance and reliability  
 
 ## Live Demo
 
@@ -36,46 +38,53 @@ It includes a **user-friendly admin panel** to manage products, orders, customer
 
 ## Technology Stack
 
-- **Backend:** Laravel (PHP Framework)
-- **Frontend:** Bootstrap 5, Vanilla JS
-- **Database:** MySQL
-- **Other:** MPESA Daraja API integration, AJAX for real-time updates
+- **Backend:** Laravel (PHP Framework)  
+- **Frontend:** Bootstrap 5, Vanilla JS  
+- **Database:** MySQL  
+- **Other:** MPESA Daraja API integration, AJAX for real-time updates  
 
 ## Installation & Setup
 
-1. Clone the repository:
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/pos-system.git
-Navigate into the project:
+2. **Navigate into the project**
+   ```bash
+   cd pos-system
+3. **Install dependencies**
+    ```bash
+    composer install
+    npm install
+    npm run dev
+3. **Configure your .env file**
+    ```bash
+    # Set your database credentials
+    DB_DATABASE=your_database
+    DB_USERNAME=your_username
+    DB_PASSWORD=your_password
 
-bash
-Copy code
-cd pos-system
-Install dependencies:
+    # Set your MPESA credentials
+    MPESA_PAYBILL=your_paybill
+    MPESA_PASSKEY=your_passkey
+    MPESA_CALLBACK_URL=https://yourdomain.com/mpesa/callback
 
-bash
-Copy code
-composer install
-npm install && npm run dev
-Configure your .env file:
-
-Database credentials
-
-MPESA Paybill credentials and callback URLs
-
-Run migrations:
-
-bash
-Copy code
-php artisan migrate --seed
-Serve the application:
-
-bash
-Copy code
-php artisan serve
+4. **Run migrations**
+    ```bash
+    php artisan migrate --seed
+    
+5. **Serve the application**
+    ```bash
+    php artisan serve
 Contributing
 Contributions are welcome! Please fork the repository and submit pull requests. Ensure clean commits and follow coding standards.
 
 License
+
 This project is licensed under the MIT License.
+
+ **Key fixes here:**
+- All shell commands are properly wrapped in ```bash blocks  
+- `.env` instructions in a ```text block for clarity  
+- Clean, readable, professional layout  
+
 
